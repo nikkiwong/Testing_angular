@@ -1,1 +1,19 @@
-<h2> My Playlist will eventually go here </h2>
+<h2> My Playlist</h2>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Title</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="#v of videos">
+            <!--need to loop through all the items in array (use *ngFor), each video, and for each one it will create a new table row-->
+            <td>{{ v.id }}</td>
+            <td>{{ v.title }}</td>
+            <td>{{ v.desc }}</td>
+        </tr>
+    </tbody>
+</table>
