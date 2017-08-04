@@ -9,11 +9,13 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="#v of videos">
+        <tr *ngFor="#v of videos" (click)="onSelect(v)">
             <!--need to loop through all the items in array (use *ngFor), each video, and for each one it will create a new table row-->
             <td>{{ v.id }}</td>
             <td>{{ v.title }}</td>
             <td>{{ v.desc }}</td>
+            <td id=myVid></td>
+            <td><iframe width="420" height="315" [src]="'https://www.youtube.com/embed/' + v.videoCode"></iframe></td>
         </tr>
     </tbody>
 </table>
