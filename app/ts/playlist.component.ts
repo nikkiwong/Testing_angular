@@ -11,8 +11,8 @@ export class PlaylistComponent{
     //displays all the videos  
     onSelect(vid:Video){
         // console.log(JSON.stringify(vid.videoCode));
-        // var vidCode = JSON.stringify(vid.videoCode)
+        var vidId = JSON.stringify(vid.id);
         // document.getElementById("myVid").innerHTML = '<iframe width="420" height="315" [src]="' + "'https://www.youtube.com/embed/'" + vidCode + '"></iframe>'
-        document.getElementById("myVid").innerHTML ='<iframe width="420" height="315" src="'+'https://www.youtube.com/embed/' + vid.videoCode + '"></iframe>"';
+        document.getElementById(vidId).innerHTML ='<iframe width="420" height="315" src="'+'https://www.youtube.com/embed/' + vid.videoCode + '"></iframe>';
     }
 }
