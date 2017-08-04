@@ -4,11 +4,13 @@ export class Video {
     title:string;
     videoCode:string;
     desc:string;
+    count:number;
 
-    constructor(id:number,title:string, videoCode:string, desc:string){
+    constructor(id:number,title:string, videoCode:string, desc:string, count:number){
         this.id=id;
         this.title=title;
         this.videoCode=videoCode;
         this.desc=desc;
+        this.count=count;
     }
 }

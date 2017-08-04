@@ -16,9 +16,9 @@ export class AppComponent {
     constructor(){
         this.videos = [
             //whenever you want to create a new video object you write new video and whatever other info
-            new Video(1, "Nested Components", "f8qBeaGe2S4", "how to write nested components"),
-            new Video(2, "ECMAScript 6 Tutorial", "Jakoi0G8lBg", "Learn how to write ECMAScript 6"),
-            new Video(3, "Node.js Tutorial", "jiSFfpw3Btc", "Node.js Tutorial for Beginners - 3 - Basic Concepts")
+            new Video(1, "Nested Components", "f8qBeaGe2S4", "how to write nested components", 0),
+            new Video(2, "ECMAScript 6 Tutorial", "Jakoi0G8lBg", "Learn how to write ECMAScript 6", 0),
+            new Video(3, "Node.js Tutorial", "jiSFfpw3Btc", "Node.js Tutorial for Beginners - 3 - Basic Concepts", 0)
         ]
     }
 }
