@@ -14,7 +14,7 @@
             <td>{{ v.id }}</td>
             <td>{{ v.title }}</td>
             <td>{{ v.desc }}</td>
-            <td id = "{{ v.id }}"></td>
+            <div id = "{{ v.id }}" [hidden]="hideElement"></div>
             <!--<td><iframe width="420" height="315" [src]="'https://www.youtube.com/embed/' + v.videoCode"></iframe></td>-->
         </tr>
     </tbody>
